@@ -4,7 +4,9 @@
 </head>
 <body>
     <div class="params">
-        <input class="grid_size">
+        <a>Select Granularity</a>
+        <input id="slider" class="grid_size" type="range" min="1" max="100" value="50" class="slider" onmouseover="slider(),simulate_sketch()">
+        <p id="number_of_squares">(1-100)</p>
         <button onclick="create_sketch()">Create Sketch</button>
     </div>
     <div id="container">
